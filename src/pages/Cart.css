@@ -1,0 +1,134 @@
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .cart-container {
+    flex-direction: row;
+  }
+}
+
+.cart-items {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cart-items {
+    width: 60%;
+  }
+}
+
+.cart-summary {
+  width: 100%;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 1rem;
+  justify-content: space-between;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .cart-summary {
+    width: 40%;
+  }
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #065f46;
+}
+
+.summary-cart-title {
+  font-size: 1rem;
+  color: #065f46;
+}
+
+.summary-title {
+  font-size: 3rem;
+  color: #059669;
+  margin-top: -1rem;
+}
+
+.summary-items {
+  font-size: 1rem;
+  color: #4b5563;
+  font-weight: bold;
+}
+
+.summary-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-total {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+.checkout-button {
+  background-color: #059669;
+  color: white;
+  border: 2px solid #065f46;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 1.25rem;
+}
+
+.checkout-button:hover {
+  background-color: #f3f4f6;
+  color: #065f46;
+  cursor: pointer;
+}
+
+.empty-cart {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cart h1 {
+  font-size: 1.25rem;
+  color: #4b5563;
+  font-weight: bold;
+}
+
+.shop-now-button {
+  background-color: #059669;
+  color: white;
+  border: 2px solid #065f46;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 1.25rem;
+}
+
+.shop-now-button:hover {
+  background-color: #f3f4f6;
+  color: #065f46;
+  cursor: pointer;
+}
